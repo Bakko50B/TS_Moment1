@@ -1,7 +1,11 @@
-html, body {
+html,
+body {
     height: 100vh;
     width: 100vw;
     background-color: blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -9,4 +13,43 @@ main {
     width: 80%;
     height: fit-content;
     background-color: #fefefe;
+}
+
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 1rem;
+    width: fit-content;
+    height: 3rem;
+    background-color: green;
+    color: white;
+    line-height: 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+    table-layout: fixed;
+}
+
+th,
+td {
+    text-align: left;
+    vertical-align: top;
+    border: .1rem rgba(128, 128, 128, 0.263) solid;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        width: 100%;
+    }
+
+    table {
+        width: 98%;
+    }
 }
