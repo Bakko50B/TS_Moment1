@@ -5,7 +5,7 @@ var initialData = [
 var tableArray = JSON.parse(localStorage.getItem('tableArray') || '[]');
 if (tableArray.length === 0) {
     tableArray = initialData;
-    localStorage.setItem('dataArray', JSON.stringify(tableArray));
+    localStorage.setItem('tableArray', JSON.stringify(tableArray));
 }
 function updateTable() {
     var tableBody = document.getElementById('tableBody');
