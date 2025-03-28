@@ -10,6 +10,21 @@
 <body>
     <main>
         <h1>Ny kurs</h1>
+        <form id="dataForm">
+            <fieldset>
+                <legend>Ny kurs</legend>
+                <label for="courseCode">Kurskod</label><br>
+                <input type="text" id="courseCode" name="courseCode" placeholder="Kod" required>
+                <label for="courseName">Kursnamn</label><br>
+                <input type="text" id="courseName" name="courseName" placeholder="Kursnamn" required>
+                <label for="syllabus">Syllabus</label><br>
+                <input type="text" id="syllabus" name="syllabus" placeholder="Syllabus" required>
+                <label for="progression">Progression</label><br>
+                <input type="text" id="progression" name="progression" placeholder="Prog..." required>
+                <br>
+                <button type="submit">Lägg till kurs!</button>
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>
