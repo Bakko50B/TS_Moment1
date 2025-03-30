@@ -1,21 +1,20 @@
-html,
 body {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: rgba(140, 224, 158, 0.584);
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 main {
+    /* margin-top: 3rem; */
     margin: 0 auto;
-    width: fit-content;
+    width: 96%;
     max-width: 1600px;
     height: fit-content;
     background-color: #fefefe;
     padding-bottom: 10px;
-    box-shadow: 10px 10px 30px black;
+    box-shadow: 10px 10px 50px black;
     border-radius: 15px;
 }
 
@@ -76,10 +75,10 @@ form {
     padding: 5px;
     border-radius: 1rem;
     width: fit-content;
-    height: 3rem;
+    height: 3.8rem;
     background-color: green;
     color: white;
-    line-height: 3rem;
+    line-height: 3.8rem;
     text-decoration: none;
     font-size: 1.2rem;
     transition: .7s linear;
@@ -115,7 +114,7 @@ input {
 
 @media screen and (max-width: 700px) {
     main {
-        width: 100%;
+        width: 96%;
     }
 
     table {
