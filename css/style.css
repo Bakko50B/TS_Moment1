@@ -35,14 +35,14 @@ h1 {
     line-height: 3rem;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: 1s linear;
+    transition: .7s linear;
     border: 1px solid black;
 }
 
 .button:hover{
     background-color:  rgb(1, 184, 1);
     color:black;
-    font-size: 2rem;
+    font-size: 1.7rem;
     border: 2px solid white;
     box-shadow: 10px 10px 20px black;
 }
@@ -77,14 +77,14 @@ form {
     font-size: 1.2rem;
     margin-bottom: 10px;
     border-radius: 1rem;
-    transition: 1s;
+    transition: .7s;
     
 }
 
 #insertbtn:hover{
     background-color:  rgb(1, 184, 1);
     color:black;
-    font-size: 2rem;
+    font-size: 1.7rem;
     border: 2px solid white;
     box-shadow: 10px 10px 20px black;
 }

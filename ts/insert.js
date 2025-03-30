@@ -4,14 +4,13 @@ form.addEventListener('submit', function (event) {
     var progressionInput = form.elements.namedItem('progression').value;
     var courseCodeInput = form.elements.namedItem('courseCode').value;
     // Hämta existerande data från localStorage
-    var dataArray = JSON.parse(localStorage.getItem('tableArray') || '[]');
+    var tableArray = JSON.parse(localStorage.getItem('tableArray') || '[]');
     // Kontrollera om kurskoden redan finns
-    var isDuplicate = dataArray.some(function (course) { return course.courseCode === courseCodeInput; });
+    var isDuplicate = tableArray.some(function (course) { return course.courseCode === courseCodeInput; });
     if (isDuplicate) {
         alert('Kurskoden finns redan. Ange en unik kurskod.');
         return; // Avbryt om kurskoden inte är unik
     }
-    // Kontrollera progressionens giltighet
     if (progressionInput === 'A' || progressionInput === 'B' || progressionInput === 'C') {
         var newItem = {
             courseCode: courseCodeInput,
@@ -20,8 +19,8 @@ form.addEventListener('submit', function (event) {
             progression: progressionInput
         };
         // Lägg till den nya kursen och uppdatera localStorage
-        dataArray.push(newItem);
-        localStorage.setItem('tableArray', JSON.stringify(dataArray));
+        tableArray.push(newItem);
+        localStorage.setItem('tableArray', JSON.stringify(tableArray));
         form.reset();
         alert('Kursen har lagts till!');
         window.location.href = 'index.html'; // Redirect till index.html

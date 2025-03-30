@@ -15,16 +15,16 @@ form.addEventListener('submit', (event: Event) => {
     const courseCodeInput = (form.elements.namedItem('courseCode') as HTMLInputElement).value;
 
     // Hämta existerande data från localStorage
-    const dataArray: Course[] = JSON.parse(localStorage.getItem('tableArray') || '[]');
+    const tableArray: Course[] = JSON.parse(localStorage.getItem('tableArray') || '[]');
 
     // Kontrollera om kurskoden redan finns
-    const isDuplicate = dataArray.some(course => course.courseCode === courseCodeInput);
+    const isDuplicate = tableArray.some(course => course.courseCode === courseCodeInput);
     if (isDuplicate) {
         alert('Kurskoden finns redan. Ange en unik kurskod.');
         return; // Avbryt om kurskoden inte är unik
     }
 
-    // Kontrollera progressionens giltighet
+    
     if (progressionInput === 'A' || progressionInput === 'B' || progressionInput === 'C') {
         const newItem: Course = {
             courseCode: courseCodeInput,
@@ -34,8 +34,8 @@ form.addEventListener('submit', (event: Event) => {
         };
 
         // Lägg till den nya kursen och uppdatera localStorage
-        dataArray.push(newItem);
-        localStorage.setItem('tableArray', JSON.stringify(dataArray));
+        tableArray.push(newItem);
+        localStorage.setItem('tableArray', JSON.stringify(tableArray));
 
         form.reset();
 
