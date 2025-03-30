@@ -5,7 +5,6 @@ interface Course {
     progression: 'A' | 'B' | 'C';
 }
 
-
 const form = document.getElementById('dataForm') as HTMLFormElement;
 
 form.addEventListener('submit', (event: Event) => {
