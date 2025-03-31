@@ -1,3 +1,4 @@
+// import { Course } from "./interface";
 var initialData = [
     { courseCode: 'DT057G', courseName: 'Webbutveckling I', syllabus: 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/', progression: 'A' },
     { courseCode: 'DT084G', courseName: 'Introduktion till programmering i JavaScript', syllabus: 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT084G/', progression: 'A' },

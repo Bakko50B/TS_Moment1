@@ -5,6 +5,8 @@ interface Course {
     progression: 'A' | 'B' | 'C';
 }
 
+// import { Course } from "./interface";
+
 const form = document.getElementById('dataForm') as HTMLFormElement;
 
 form.addEventListener('submit', (event: Event) => {

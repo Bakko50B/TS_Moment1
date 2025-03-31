@@ -1,3 +1,4 @@
+// import { Course } from "./interface";
 var form = document.getElementById('dataForm');
 form.addEventListener('submit', function (event) {
     event.preventDefault();
