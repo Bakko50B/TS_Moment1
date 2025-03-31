@@ -5,9 +5,9 @@ interface Course {
     progression: 'A' | 'B' | 'C';
 }
 
+// Sparar dessa som bortkommentarad kod. 
+// Får det inte att fungera
 // import { Course } from "./interface";
-
-
 
 const initialData: Course[] = [
     { courseCode: 'DT057G', courseName: 'Webbutveckling I', syllabus: 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/', progression: 'A' },

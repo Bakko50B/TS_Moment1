@@ -5,6 +5,8 @@ interface Course {
     progression: 'A' | 'B' | 'C';
 }
 
+// Sparar dessa som bortkommentarad kod. 
+// Får det inte att fungera
 // import { Course } from "./interface";
 
 const form = document.getElementById('dataForm') as HTMLFormElement;
@@ -22,7 +24,7 @@ form.addEventListener('submit', (event: Event) => {
     const isDuplicate = tableArray.some(course => course.courseCode === courseCodeInput);
     if (isDuplicate) {
         alert('Kurskoden finns redan. Ange en unik kurskod.');
-        return; // Avbryt om kurskoden inte är unik
+        return; 
     }
 
     

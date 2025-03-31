@@ -1,3 +1,5 @@
+// Sparar dessa som bortkommentarad kod. 
+// Får det inte att fungera
 // import { Course } from "./interface";
 var form = document.getElementById('dataForm');
 form.addEventListener('submit', function (event) {
@@ -10,7 +12,7 @@ form.addEventListener('submit', function (event) {
     var isDuplicate = tableArray.some(function (course) { return course.courseCode === courseCodeInput; });
     if (isDuplicate) {
         alert('Kurskoden finns redan. Ange en unik kurskod.');
-        return; // Avbryt om kurskoden inte är unik
+        return;
     }
     if (progressionInput === 'A' || progressionInput === 'B' || progressionInput === 'C') {
         var newItem = {

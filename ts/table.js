@@ -1,3 +1,5 @@
+// Sparar dessa som bortkommentarad kod. 
+// Får det inte att fungera
 // import { Course } from "./interface";
 var initialData = [
     { courseCode: 'DT057G', courseName: 'Webbutveckling I', syllabus: 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT057G/', progression: 'A' },
