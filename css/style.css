@@ -116,15 +116,13 @@ input {
 }
 
 @media screen and (max-width: 700px) {
-    body {
-       overflow: hidden;
-    }
-
+    
     main {
         width: 96%;
         margin: 20px auto 0;
         overflow: hidden;
         height: fit-content;    
+        overflow: auto;
     }
 
     table {
